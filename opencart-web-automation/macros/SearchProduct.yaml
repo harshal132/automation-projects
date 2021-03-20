@@ -1,0 +1,15 @@
+description: |
+  Enter Product Name and Click Enter then Click on Product Link to Open Product Details.
+actions:
+  - description: Enter Product Name.
+    action: org.getopentest.selenium.SendKeys
+    args: 
+      locator: $data("Locators").HomePage.searchProduct
+      text: $data("Locators").ProductNames.product1
+      sendEnter: true
+
+  - description: Click on Product Name.
+    action: org.getopentest.selenium.Click
+    args: 
+      locator: {linkText: $data("Locators").ProductNames.product1}
+          

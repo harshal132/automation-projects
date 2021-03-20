@@ -1,0 +1,27 @@
+description: |
+  To validate whether the website navigates the user to the product page on clicking on the product link
+  and shows product description under description section
+actors: 
+  - actor: WEB
+    segments:
+      - segment: 1
+        actions:
+        - description: Navigate to Opencart website.
+          action: org.getopentest.selenium.NavigateTo
+          args: 
+            url: $data("Locators").URL
+        - description: Verfiy Title of the Website.
+          action: org.getopentest.selenium.AssertPageTitle
+          args:
+            titleIs: Your Store
+
+        - description: Search Product Name and Click on Product Link.
+          macro: SearchProduct
+        
+        - description: Check if the description section is active by default for selected product.
+          action: org.getopentest.selenium.AssertElementPresent
+          args:
+            locator:  $data("Locators").HomePage.activeDescription
+          
+        - description:
+          action: org.getopentest.selenium.CloseBrowser

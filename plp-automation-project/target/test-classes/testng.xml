@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="PLP-Automation Suite" parallel="false">
+  
+  <test name="Compare Products">
+    <classes>
+      <class name="com.plp.tests.RemoveFromCompare"/>
+      <class name="com.plp.tests.CompareProductsTest"/>
+    </classes>
+  </test>
+  
+  <test name="ProductPage Validation">
+  	<classes>
+      <class name="com.plp.tests.ProductPageValidation"/>
+    </classes>
+  </test>
+   
+  <!--  <test name="BillingDetails Section Validation">
+  	<classes>
+      <class name=""/>
+    </classes>
+  </test>-->
+  
+  <!-- <test name="DeliveryDetails Section Validation">
+  	<classes>
+      <class name=""/>
+    </classes>
+  </test>-->
+
+  <!--<test name="DeliveryMethod Section Validation">
+  	<classes>
+      <class name=""/>
+    </classes>
+  </test>-->
+    
+  <test name="Payment Method, Order Confirmation and Checkout">
+  	<classes>
+      <class name="com.plp.tests.PaymentMethod"/>
+      <class name="com.plp.tests.OrderConfirmation"/>
+      <class name="com.plp.tests.CheckoutTitleValidation"/>
+    </classes>
+  </test>
+  
+  <!--<test name="Logins Validation">
+  	<classes>
+      <class name=""/>
+    </classes>
+  </test>-->
+
+  
+</suite> <!-- Suite -->

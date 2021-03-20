@@ -1,0 +1,10 @@
+HomePage:
+  activeDescription : { css: "li.active > a[href='#tab-description']" }
+  searchProduct: {name: search}
+  specification: { linkText: "Specification" }
+  
+URL: https://demo.opencart.com/
+
+ProductNames:
+  product1: "HP LP3065"
+  product2: "Canon EOS 5D"
