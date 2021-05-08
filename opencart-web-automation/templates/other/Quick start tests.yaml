@@ -1,9 +1,0 @@
-description: Runs the sample tests that don't require any configuration
-sessionLabel: Quick start tests
-maxIterations: 1
-tests:
-    - name: GitHub API test
-      path: api
- 
-    - name: Using an external JavaScript file
-      path: other
