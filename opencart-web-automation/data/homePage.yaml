@@ -1,0 +1,6 @@
+
+activeDescription : { css: "li.active > a[href='#tab-description']" }
+
+searchProduct: {name: search}
+
+specification: { linkText: "Specification" }
