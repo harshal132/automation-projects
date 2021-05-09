@@ -24,6 +24,7 @@ public class AppiumSetup {
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		capabilities.setCapability(MobileCapabilityType.APP, file.getAbsolutePath());
+		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60000");
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "ASUS_X00T_3");
 		android = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		System.out.println("Application Launched Successfully!");
