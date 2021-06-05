@@ -121,4 +121,21 @@ public class MobileActions {
             .add(press)
             .perform();
     }
+    
+    public void swipeByElementsWithoutPoints (AndroidElement androidElement,AndroidElement androidElement2, int time) {
+        new TouchAction(driver)
+        	.longPress(
+        			longPressOptions()
+        			.withElement(element(androidElement))
+        			.withDuration(ofMillis(time*1000)))
+        			.moveTo(element(androidElement2))
+        			.release()
+        	.perform();
+    }
+    
+    public void scrollIntoView(String searchElement) {
+    	String query = "new UiScrollable(new UiSelector()).scrollIntoView(text(\""+searchElement+"\"));";
+    	AndroidElement element = (AndroidElement) driver.findElementByAndroidUIAutomator(query);
+    	this.tap(element);
+    }
 }
