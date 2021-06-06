@@ -3,21 +3,22 @@ package com.utils;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class AppiumSetup {
-	
 	public static void CloseApplication(AndroidDriver<?> android) {
 		android.closeApp();
 	}
 
-	public static AndroidDriver<AndroidElement> LaunchApplication() throws MalformedURLException {
+	public static AndroidDriver<AndroidElement> LaunchApplication(String appName) throws MalformedURLException {
 		AndroidDriver<AndroidElement> android;
 		//Method For Setting up Capabilities
-		File file = new File("app.apk");
+		File file = new File(appName);
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
 		capabilities.setCapability(MobileCapabilityType.FULL_RESET, false);
@@ -31,8 +32,13 @@ public class AppiumSetup {
 		return android;
 	}
 	
-	@SuppressWarnings("unused")
 	public static void log(String log) {
 		System.out.println(log);
+	}
+	
+	public static void navigate(AndroidDriver<AndroidElement> driver, MobileActions actions, String pageName) {
+		AndroidElement views = driver.findElement(By.xpath("//android.widget.TextView[@text='"+pageName+"']"));
+		actions.tap(views);
+		AppiumSetup.log("Navigated to "+pageName+" page");
 	}
 }

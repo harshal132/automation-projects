@@ -122,12 +122,12 @@ public class MobileActions {
             .perform();
     }
     
-    public void swipeByElementsWithoutPoints (AndroidElement androidElement,AndroidElement androidElement2, int time) {
+    public void swipeByElementsWithoutPoints (AndroidElement androidElement,AndroidElement androidElement2, WaitTime time) {
         new TouchAction(driver)
         	.longPress(
         			longPressOptions()
         			.withElement(element(androidElement))
-        			.withDuration(ofMillis(time*1000)))
+        			.withDuration(ofMillis(time.getValue()*1000)))
         			.moveTo(element(androidElement2))
         			.release()
         	.perform();
@@ -137,5 +137,13 @@ public class MobileActions {
     	String query = "new UiScrollable(new UiSelector()).scrollIntoView(text(\""+searchElement+"\"));";
     	AndroidElement element = (AndroidElement) driver.findElementByAndroidUIAutomator(query);
     	this.tap(element);
+    }
+    
+    public void dragAndDrop (AndroidElement androidElement,AndroidElement androidElement2) {
+        new TouchAction(driver)
+        	.longPress(element(androidElement))
+        			.moveTo(element(androidElement2))
+        			.release()
+        	.perform();
     }
 }
