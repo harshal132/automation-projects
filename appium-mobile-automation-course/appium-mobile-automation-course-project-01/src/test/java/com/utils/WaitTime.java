@@ -28,13 +28,3 @@ public enum WaitTime {
         return value;
     }
 }
-
-/*
- * public enum PageType {
-    ABOUT(1),
-    CODING(2),
-    DATABASES(3);
-
-   
-}
- */
