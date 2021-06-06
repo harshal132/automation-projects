@@ -30,15 +30,14 @@ public class AppiumSetup {
 		android = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		System.out.println("Application Launched Successfully!");
 		return android;
-	}
-	
-	public static void log(String log) {
-		System.out.println(log);
-	}
-	
+	}	
 	public static void navigate(AndroidDriver<AndroidElement> driver, MobileActions actions, String pageName) {
 		AndroidElement views = driver.findElement(By.xpath("//android.widget.TextView[@text='"+pageName+"']"));
 		actions.tap(views);
 		AppiumSetup.log("Navigated to "+pageName+" page");
+	}
+
+	public static void log(String log) {
+		System.out.println(log);
 	}
 }

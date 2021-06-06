@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import com.utils.AppiumSetup;
 import com.utils.MobileActions;
 import com.utils.WaitTime;
-
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
@@ -18,8 +17,7 @@ public class SwipeMinuteHandOfClock {
 			driver = AppiumSetup.LaunchApplication("app.apk");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
-		}
-		
+		}	
 		//setup implicit wait
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		actions = new MobileActions(driver);
