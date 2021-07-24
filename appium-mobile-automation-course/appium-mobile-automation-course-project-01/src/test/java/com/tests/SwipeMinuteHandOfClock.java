@@ -5,20 +5,19 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import com.utils.AppiumSetup;
 import com.utils.MobileActions;
+import com.utils.WaitTime;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
 public class SwipeMinuteHandOfClock {
 	static AndroidDriver<AndroidElement> driver;
 	static MobileActions actions;
-	final static int longPressValue = 2;
 	public static void main(String[] args) {
 		try {
-			driver = AppiumSetup.LaunchApplication();
+			driver = AppiumSetup.LaunchApplication("app.apk");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
-		}
-		
+		}	
 		//setup implicit wait
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		actions = new MobileActions(driver);
@@ -31,7 +30,7 @@ public class SwipeMinuteHandOfClock {
 	private static void dragMinuteHandToMinute(String minute) {
 		AndroidElement selectedMinuteHand = driver.findElement(By.xpath("//*[contains(@selected, 'true')]"));
 		AndroidElement selectHour = driver.findElement(By.xpath("//*[@content-desc='"+minute+"']"));
-		actions.swipeByElementsWithoutPoints(selectedMinuteHand,selectHour, longPressValue);
+		actions.swipeByElementsWithoutPoints(selectedMinuteHand,selectHour, WaitTime.LOW);
 		AppiumSetup.log("Swipe from one element to another is completed");
 		
 	}

@@ -15,7 +15,7 @@ public class GesturesAppiumTest {
 	public static void main(String[] args) {
 		
 		try {
-			driver = AppiumSetup.LaunchApplication();
+			driver = AppiumSetup.LaunchApplication("app.apk");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
