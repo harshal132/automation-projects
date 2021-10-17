@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="15" ignored="0" total="41" passed="26">
   <reporter-output>
   </reporter-output>
-  <suite name="PLP-Automation Suite" duration-ms="223236" started-at="2021-10-17T16:45:13 IST" finished-at="2021-10-17T16:48:56 IST">
+  <suite name="PLP-Automation Suite" duration-ms="182222" started-at="2021-10-17T17:04:46 IST" finished-at="2021-10-17T17:07:48 IST">
     <groups>
     </groups>
-    <test name="ProductPage Validation" duration-ms="177687" started-at="2021-10-17T16:45:13 IST" finished-at="2021-10-17T16:48:11 IST">
+    <test name="Mouse Hover Actions" duration-ms="29788" started-at="2021-10-17T17:04:46 IST" finished-at="2021-10-17T17:05:15 IST">
+      <class name="com.plp.tests.HoverMouseAction">
+        <test-method status="PASS" signature="verifyMouseHoverAction()[pri:0, instance:com.plp.tests.HoverMouseAction@3d921e20]" name="verifyMouseHoverAction" duration-ms="29729" started-at="2021-10-17T17:04:46 IST" finished-at="2021-10-17T17:05:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMouseHoverAction -->
+      </class> <!-- com.plp.tests.HoverMouseAction -->
+    </test> <!-- Mouse Hover Actions -->
+    <test name="ProductPage Validation" duration-ms="182222" started-at="2021-10-17T17:04:46 IST" finished-at="2021-10-17T17:07:48 IST">
       <class name="com.plp.tests.ProductPageValidation">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="beforeClass" is-config="true" duration-ms="5931" started-at="2021-10-17T16:45:13 IST" finished-at="2021-10-17T16:45:19 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="beforeClass" is-config="true" duration-ms="8538" started-at="2021-10-17T17:04:46 IST" finished-at="2021-10-17T17:04:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="CartAddDate()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="CartAddDate" duration-ms="5121" started-at="2021-10-17T16:45:19 IST" finished-at="2021-10-17T16:45:24 IST">
+        <test-method status="FAIL" signature="CartAddDate()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="CartAddDate" duration-ms="6608" started-at="2021-10-17T17:04:54 IST" finished-at="2021-10-17T17:05:01 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Website is accepting previous delivery date]]>
@@ -36,25 +44,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CartAddDate -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3300" started-at="2021-10-17T16:45:25 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:29 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="4638" started-at="2021-10-17T17:05:02 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:07 IST">
           <params>
             <param index="0">
               <value>
@@ -65,7 +68,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3892" started-at="2021-10-17T16:45:29 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:33 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="4091" started-at="2021-10-17T17:05:07 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:11 IST">
           <params>
             <param index="0">
               <value>
@@ -76,7 +79,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3710" started-at="2021-10-17T16:45:33 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:36 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3320" started-at="2021-10-17T17:05:11 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:14 IST">
           <params>
             <param index="0">
               <value>
@@ -87,7 +90,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3176" started-at="2021-10-17T16:45:36 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:40 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3385" started-at="2021-10-17T17:05:14 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:18 IST">
           <params>
             <param index="0">
               <value>
@@ -98,7 +101,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="FAIL" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3204" started-at="2021-10-17T16:45:40 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:43 IST">
+        <test-method status="FAIL" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3437" started-at="2021-10-17T17:05:18 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:21 IST">
           <params>
             <param index="0">
               <value>
@@ -135,25 +138,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3431" started-at="2021-10-17T16:45:43 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:46 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3498" started-at="2021-10-17T17:05:21 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:25 IST">
           <params>
             <param index="0">
               <value>
@@ -164,7 +162,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5038" started-at="2021-10-17T16:45:46 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:51 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5424" started-at="2021-10-17T17:05:25 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:30 IST">
           <params>
             <param index="0">
               <value>
@@ -175,7 +173,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5494" started-at="2021-10-17T16:45:51 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:57 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5480" started-at="2021-10-17T17:05:30 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:36 IST">
           <params>
             <param index="0">
               <value>
@@ -186,7 +184,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="4922" started-at="2021-10-17T16:45:57 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:02 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5108" started-at="2021-10-17T17:05:36 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:41 IST">
           <params>
             <param index="0">
               <value>
@@ -197,7 +195,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5005" started-at="2021-10-17T16:46:02 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:07 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5072" started-at="2021-10-17T17:05:41 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:46 IST">
           <params>
             <param index="0">
               <value>
@@ -208,7 +206,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5018" started-at="2021-10-17T16:46:07 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:12 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5191" started-at="2021-10-17T17:05:46 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:51 IST">
           <params>
             <param index="0">
               <value>
@@ -219,7 +217,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5155" started-at="2021-10-17T16:46:12 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:17 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5077" started-at="2021-10-17T17:05:51 IST" data-provider="productnavigation" finished-at="2021-10-17T17:05:56 IST">
           <params>
             <param index="0">
               <value>
@@ -230,7 +228,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4563" started-at="2021-10-17T16:46:17 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:22 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="5344" started-at="2021-10-17T17:05:56 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:01 IST">
           <params>
             <param index="0">
               <value>
@@ -241,7 +239,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="5193" started-at="2021-10-17T16:46:22 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:27 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="5027" started-at="2021-10-17T17:06:01 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:07 IST">
           <params>
             <param index="0">
               <value>
@@ -252,7 +250,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4466" started-at="2021-10-17T16:46:27 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:31 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4577" started-at="2021-10-17T17:06:07 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:11 IST">
           <params>
             <param index="0">
               <value>
@@ -263,7 +261,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4776" started-at="2021-10-17T16:46:31 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:36 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4439" started-at="2021-10-17T17:06:11 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:16 IST">
           <params>
             <param index="0">
               <value>
@@ -274,7 +272,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="FAIL" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="6525" started-at="2021-10-17T16:46:36 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:43 IST">
+        <test-method status="FAIL" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="6667" started-at="2021-10-17T17:06:16 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:22 IST">
           <params>
             <param index="0">
               <value>
@@ -306,25 +304,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4962" started-at="2021-10-17T16:46:43 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:47 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="5194" started-at="2021-10-17T17:06:22 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:27 IST">
           <params>
             <param index="0">
               <value>
@@ -335,7 +328,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="FAIL" signature="VerifyFields()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyFields" duration-ms="5097" started-at="2021-10-17T16:46:47 IST" finished-at="2021-10-17T16:46:53 IST">
+        <test-method status="FAIL" signature="VerifyFields()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyFields" duration-ms="5145" started-at="2021-10-17T17:06:27 IST" finished-at="2021-10-17T17:06:33 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[First Name Field is Accepting Numeric Data]]>
@@ -360,25 +353,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFields -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4012" started-at="2021-10-17T16:46:53 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:57 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4157" started-at="2021-10-17T17:06:33 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:37 IST">
           <params>
             <param index="0">
               <value>
@@ -410,25 +398,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="5199" started-at="2021-10-17T16:46:57 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:02 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4638" started-at="2021-10-17T17:06:37 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:41 IST">
           <params>
             <param index="0">
               <value>
@@ -460,25 +443,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3824" started-at="2021-10-17T16:47:02 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:06 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4021" started-at="2021-10-17T17:06:41 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:45 IST">
           <params>
             <param index="0">
               <value>
@@ -510,25 +488,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3784" started-at="2021-10-17T16:47:06 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:09 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3891" started-at="2021-10-17T17:06:45 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:49 IST">
           <params>
             <param index="0">
               <value>
@@ -560,25 +533,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3816" started-at="2021-10-17T16:47:09 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:13 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4062" started-at="2021-10-17T17:06:49 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:53 IST">
           <params>
             <param index="0">
               <value>
@@ -610,25 +578,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4374" started-at="2021-10-17T16:47:13 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:18 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4414" started-at="2021-10-17T17:06:53 IST" data-provider="productnavigation" finished-at="2021-10-17T17:06:58 IST">
           <params>
             <param index="0">
               <value>
@@ -660,25 +623,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3376" started-at="2021-10-17T16:47:18 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:21 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3321" started-at="2021-10-17T17:06:58 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:01 IST">
           <params>
             <param index="0">
               <value>
@@ -689,7 +647,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3814" started-at="2021-10-17T16:47:21 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:25 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="4079" started-at="2021-10-17T17:07:01 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:05 IST">
           <params>
             <param index="0">
               <value>
@@ -700,7 +658,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3250" started-at="2021-10-17T16:47:25 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:28 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3252" started-at="2021-10-17T17:07:05 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:09 IST">
           <params>
             <param index="0">
               <value>
@@ -711,7 +669,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3434" started-at="2021-10-17T16:47:28 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:32 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3432" started-at="2021-10-17T17:07:09 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:12 IST">
           <params>
             <param index="0">
               <value>
@@ -722,7 +680,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3560" started-at="2021-10-17T16:47:32 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:35 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3424" started-at="2021-10-17T17:07:12 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:15 IST">
           <params>
             <param index="0">
               <value>
@@ -733,7 +691,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3290" started-at="2021-10-17T16:47:35 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:38 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3611" started-at="2021-10-17T17:07:15 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:19 IST">
           <params>
             <param index="0">
               <value>
@@ -744,19 +702,64 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyMandatoryFields()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyMandatoryFields" duration-ms="4298" started-at="2021-10-17T16:47:38 IST" finished-at="2021-10-17T16:47:43 IST">
+        <test-method status="PASS" signature="verifyMandatoryFields()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyMandatoryFields" duration-ms="3830" started-at="2021-10-17T17:07:19 IST" finished-at="2021-10-17T17:07:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMandatoryFields -->
-        <test-method status="FAIL" signature="verifyQuantity()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyQuantity" duration-ms="4882" started-at="2021-10-17T16:47:43 IST" finished-at="2021-10-17T16:47:48 IST">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="verifyQuantity()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyQuantity" duration-ms="5351" started-at="2021-10-17T17:07:23 IST" finished-at="2021-10-17T17:07:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyQuantity -->
+        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="16" started-at="2021-10-17T17:07:28 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HP LP3065]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[Success Message is displayed Even without valid quantity]]>
+              <![CDATA[unexpected alert open: {Alert text : SyntaxError: Unexpected token < in JSON at position 0
+parsererror
+<b>Warning</b>: unlink(/home/ocdemo/storage/cache/cache.catalog.language.1634473989): No such file or directory in <b>/home/ocdemo/public_html/system/library/cache/file.php</b> on line <b>68</b>{"success":"Success: You have added <a href=\"https:\/\/demo.opencart.com\/index.php?route=product\/product&amp;product_id=47\">HP LP3065<\/a> to your <a href=\"https:\/\/demo.opencart.com\/index.php?route=checkout\/cart\">shopping cart<\/a>!","total":"6 item(s) - $2,411.99"}}
+  (Session info: chrome=94.0.4606.81): SyntaxError: Unexpected token < in JSON at position 0
+parsererror
+<b>Warning</b>: unlink(/home/ocdemo/storage/cache/cache.catalog.language.1634473989): No such file or directory in <b>/home/ocdemo/public_html/system/library/cache/file.php</b> on line <b>68</b>{"success":"Success: You have added <a href=\"https:\/\/demo.opencart.com\/index.php?route=product\/product&amp;product_id=47\">HP LP3065<\/a> to your <a href=\"https:\/\/demo.opencart.com\/index.php?route=checkout\/cart\">shopping cart<\/a>!","total":"6 item(s) - $2,411.99"}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HARSHAL', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Harshal\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6553}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ebcfb467ecbe960e116ac89a55747e3
+*** Element info: {Using=name, value=search}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Success Message is displayed Even without valid quantity
-at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.verifyQuantity(ProductPageValidation.java:183)
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: Unexpected token < in JSON at position 0
+parsererror
+<b>Warning</b>: unlink(/home/ocdemo/storage/cache/cache.catalog.language.1634473989): No such file or directory in <b>/home/ocdemo/public_html/system/library/cache/file.php</b> on line <b>68</b>{"success":"Success: You have added <a href=\"https:\/\/demo.opencart.com\/index.php?route=product\/product&amp;product_id=47\">HP LP3065<\/a> to your <a href=\"https:\/\/demo.opencart.com\/index.php?route=checkout\/cart\">shopping cart<\/a>!","total":"6 item(s) - $2,411.99"}}
+  (Session info: chrome=94.0.4606.81): SyntaxError: Unexpected token < in JSON at position 0
+parsererror
+<b>Warning</b>: unlink(/home/ocdemo/storage/cache/cache.catalog.language.1634473989): No such file or directory in <b>/home/ocdemo/public_html/system/library/cache/file.php</b> on line <b>68</b>{"success":"Success: You have added <a href=\"https:\/\/demo.opencart.com\/index.php?route=product\/product&amp;product_id=47\">HP LP3065<\/a> to your <a href=\"https:\/\/demo.opencart.com\/index.php?route=checkout\/cart\">shopping cart<\/a>!","total":"6 item(s) - $2,411.99"}
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HARSHAL', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Harshal\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:6553}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ebcfb467ecbe960e116ac89a55747e3
+*** Element info: {Using=name, value=search}
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.clear(Unknown Source)
+at com.automation.utils.SearchProduct.SearchProductFunc(SearchProduct.java:159)
+at com.plp.tests.ProductPageValidation.verifySpecification(ProductPageValidation.java:60)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -773,36 +776,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyQuantity -->
-        <test-method status="PASS" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3657" started-at="2021-10-17T16:47:48 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:51 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[HP LP3065]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="4101" started-at="2021-10-17T16:47:51 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:55 IST">
+        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="4364" started-at="2021-10-17T17:07:28 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:33 IST">
           <params>
             <param index="0">
               <value>
@@ -834,25 +821,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="PASS" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3429" started-at="2021-10-17T16:47:55 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:59 IST">
+        <test-method status="PASS" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3678" started-at="2021-10-17T17:07:33 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:36 IST">
           <params>
             <param index="0">
               <value>
@@ -863,7 +845,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3590" started-at="2021-10-17T16:47:59 IST" data-provider="productnavigation" finished-at="2021-10-17T16:48:02 IST">
+        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3522" started-at="2021-10-17T17:07:36 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:40 IST">
           <params>
             <param index="0">
               <value>
@@ -895,25 +877,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3665" started-at="2021-10-17T16:48:02 IST" data-provider="productnavigation" finished-at="2021-10-17T16:48:06 IST">
+        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3398" started-at="2021-10-17T17:07:40 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:43 IST">
           <params>
             <param index="0">
               <value>
@@ -945,25 +922,20 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3828" started-at="2021-10-17T16:48:06 IST" data-provider="productnavigation" finished-at="2021-10-17T16:48:10 IST">
+        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3913" started-at="2021-10-17T17:07:43 IST" data-provider="productnavigation" finished-at="2021-10-17T17:07:47 IST">
           <params>
             <param index="0">
               <value>
@@ -995,37 +967,24 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="afterClass" is-config="true" duration-ms="806" started-at="2021-10-17T16:48:10 IST" finished-at="2021-10-17T16:48:11 IST">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="afterClass" is-config="true" duration-ms="765" started-at="2021-10-17T17:07:47 IST" finished-at="2021-10-17T17:07:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.plp.tests.ProductPageValidation -->
     </test> <!-- ProductPage Validation -->
-    <test name="Mouse Hover Actions" duration-ms="45511" started-at="2021-10-17T16:48:11 IST" finished-at="2021-10-17T16:48:56 IST">
-      <class name="com.plp.tests.HoverMouseAction">
-        <test-method status="PASS" signature="verifyMouseHoverAction()[pri:0, instance:com.plp.tests.HoverMouseAction@3d921e20]" name="verifyMouseHoverAction" duration-ms="45507" started-at="2021-10-17T16:48:11 IST" finished-at="2021-10-17T16:48:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMouseHoverAction -->
-      </class> <!-- com.plp.tests.HoverMouseAction -->
-    </test> <!-- Mouse Hover Actions -->
   </suite> <!-- PLP-Automation Suite -->
 </testng-results>

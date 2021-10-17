@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="PLP-Automation Suite" parallel="false">
+<suite name="PLP-Automation Suite" parallel="tests">
   
   <!-- <test name="Compare Products">
     <classes>
