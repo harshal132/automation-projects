@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="15" ignored="0" total="40" passed="25">
+<testng-results skipped="0" failed="15" ignored="0" total="41" passed="26">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="302118" started-at="2021-10-17T13:03:43 IST" finished-at="2021-10-17T13:08:45 IST">
+  <suite name="PLP-Automation Suite" duration-ms="223236" started-at="2021-10-17T16:45:13 IST" finished-at="2021-10-17T16:48:56 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="302118" started-at="2021-10-17T13:03:43 IST" finished-at="2021-10-17T13:08:45 IST">
+    <test name="ProductPage Validation" duration-ms="177687" started-at="2021-10-17T16:45:13 IST" finished-at="2021-10-17T16:48:11 IST">
       <class name="com.plp.tests.ProductPageValidation">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="beforeClass" is-config="true" duration-ms="80154" started-at="2021-10-17T13:03:43 IST" finished-at="2021-10-17T13:05:03 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="beforeClass" is-config="true" duration-ms="5931" started-at="2021-10-17T16:45:13 IST" finished-at="2021-10-17T16:45:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="CartAddDate()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="CartAddDate" duration-ms="30890" started-at="2021-10-17T13:05:03 IST" finished-at="2021-10-17T13:05:34 IST">
+        <test-method status="FAIL" signature="CartAddDate()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="CartAddDate" duration-ms="5121" started-at="2021-10-17T16:45:19 IST" finished-at="2021-10-17T16:45:24 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Website is accepting previous delivery date]]>
@@ -19,7 +19,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Website is accepting previous delivery date
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.CartAddDate(ProductPageValidation.java:161)
+at com.plp.tests.ProductPageValidation.CartAddDate(ProductPageValidation.java:160)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -54,7 +54,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CartAddDate -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="8993" started-at="2021-10-17T13:05:39 IST" data-provider="productnavigation" finished-at="2021-10-17T13:05:48 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3300" started-at="2021-10-17T16:45:25 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:29 IST">
           <params>
             <param index="0">
               <value>
@@ -65,7 +65,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="6576" started-at="2021-10-17T13:05:48 IST" data-provider="productnavigation" finished-at="2021-10-17T13:05:54 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3892" started-at="2021-10-17T16:45:29 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:33 IST">
           <params>
             <param index="0">
               <value>
@@ -76,7 +76,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3694" started-at="2021-10-17T13:05:54 IST" data-provider="productnavigation" finished-at="2021-10-17T13:05:58 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3710" started-at="2021-10-17T16:45:33 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:36 IST">
           <params>
             <param index="0">
               <value>
@@ -87,7 +87,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3797" started-at="2021-10-17T13:05:58 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:02 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3176" started-at="2021-10-17T16:45:36 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:40 IST">
           <params>
             <param index="0">
               <value>
@@ -98,7 +98,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="FAIL" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="5290" started-at="2021-10-17T13:06:02 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:07 IST">
+        <test-method status="FAIL" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3204" started-at="2021-10-17T16:45:40 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:43 IST">
           <params>
             <param index="0">
               <value>
@@ -118,7 +118,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at com.plp.tests.ProductPageValidation.ProductNavigation(ProductPageValidation.java:36)
+at com.plp.tests.ProductPageValidation.ProductNavigation(ProductPageValidation.java:38)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -153,7 +153,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="4200" started-at="2021-10-17T13:06:07 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:11 IST">
+        <test-method status="PASS" signature="ProductNavigation(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ProductNavigation" duration-ms="3431" started-at="2021-10-17T16:45:43 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:46 IST">
           <params>
             <param index="0">
               <value>
@@ -164,7 +164,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductNavigation -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="6630" started-at="2021-10-17T13:06:11 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:18 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5038" started-at="2021-10-17T16:45:46 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:51 IST">
           <params>
             <param index="0">
               <value>
@@ -175,7 +175,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="6320" started-at="2021-10-17T13:06:18 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:24 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5494" started-at="2021-10-17T16:45:51 IST" data-provider="productnavigation" finished-at="2021-10-17T16:45:57 IST">
           <params>
             <param index="0">
               <value>
@@ -186,7 +186,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5123" started-at="2021-10-17T13:06:24 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:29 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="4922" started-at="2021-10-17T16:45:57 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:02 IST">
           <params>
             <param index="0">
               <value>
@@ -197,7 +197,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5225" started-at="2021-10-17T13:06:29 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:35 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5005" started-at="2021-10-17T16:46:02 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:07 IST">
           <params>
             <param index="0">
               <value>
@@ -208,7 +208,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5847" started-at="2021-10-17T13:06:35 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:41 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5018" started-at="2021-10-17T16:46:07 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:12 IST">
           <params>
             <param index="0">
               <value>
@@ -219,7 +219,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="6752" started-at="2021-10-17T13:06:41 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:47 IST">
+        <test-method status="PASS" signature="ReviewFunc(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="ReviewFunc" duration-ms="5155" started-at="2021-10-17T16:46:12 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:17 IST">
           <params>
             <param index="0">
               <value>
@@ -230,7 +230,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReviewFunc -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="5169" started-at="2021-10-17T13:06:47 IST" data-provider="productnavigation" finished-at="2021-10-17T13:06:53 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4563" started-at="2021-10-17T16:46:17 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:22 IST">
           <params>
             <param index="0">
               <value>
@@ -241,7 +241,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="8937" started-at="2021-10-17T13:06:53 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:01 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="5193" started-at="2021-10-17T16:46:22 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:27 IST">
           <params>
             <param index="0">
               <value>
@@ -252,7 +252,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4402" started-at="2021-10-17T13:07:01 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:06 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4466" started-at="2021-10-17T16:46:27 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:31 IST">
           <params>
             <param index="0">
               <value>
@@ -263,7 +263,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4601" started-at="2021-10-17T13:07:06 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:10 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4776" started-at="2021-10-17T16:46:31 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:36 IST">
           <params>
             <param index="0">
               <value>
@@ -274,7 +274,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="FAIL" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="6692" started-at="2021-10-17T13:07:10 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:17 IST">
+        <test-method status="FAIL" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="6525" started-at="2021-10-17T16:46:36 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:43 IST">
           <params>
             <param index="0">
               <value>
@@ -289,7 +289,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Product is not added to the cart
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.VerifyAddToCart(ProductPageValidation.java:130)
+at com.plp.tests.ProductPageValidation.VerifyAddToCart(ProductPageValidation.java:129)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -324,7 +324,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4442" started-at="2021-10-17T13:07:17 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:22 IST">
+        <test-method status="PASS" signature="VerifyAddToCart(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyAddToCart" duration-ms="4962" started-at="2021-10-17T16:46:43 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:47 IST">
           <params>
             <param index="0">
               <value>
@@ -335,7 +335,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyAddToCart -->
-        <test-method status="FAIL" signature="VerifyFields()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyFields" duration-ms="5103" started-at="2021-10-17T13:07:22 IST" finished-at="2021-10-17T13:07:27 IST">
+        <test-method status="FAIL" signature="VerifyFields()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyFields" duration-ms="5097" started-at="2021-10-17T16:46:47 IST" finished-at="2021-10-17T16:46:53 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[First Name Field is Accepting Numeric Data]]>
@@ -343,7 +343,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: First Name Field is Accepting Numeric Data
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.VerifyFields(ProductPageValidation.java:116)
+at com.plp.tests.ProductPageValidation.VerifyFields(ProductPageValidation.java:115)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -378,7 +378,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFields -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3988" started-at="2021-10-17T13:07:27 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:31 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4012" started-at="2021-10-17T16:46:53 IST" data-provider="productnavigation" finished-at="2021-10-17T16:46:57 IST">
           <params>
             <param index="0">
               <value>
@@ -393,7 +393,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Reviews are not available
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:78)
+at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:80)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -428,7 +428,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4545" started-at="2021-10-17T13:07:31 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:35 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="5199" started-at="2021-10-17T16:46:57 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:02 IST">
           <params>
             <param index="0">
               <value>
@@ -443,7 +443,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Reviews are not available
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:78)
+at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:80)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -478,7 +478,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3769" started-at="2021-10-17T13:07:35 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:39 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3824" started-at="2021-10-17T16:47:02 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:06 IST">
           <params>
             <param index="0">
               <value>
@@ -493,7 +493,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Reviews are not available
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:78)
+at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:80)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -528,7 +528,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3790" started-at="2021-10-17T13:07:39 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:43 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3784" started-at="2021-10-17T16:47:06 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:09 IST">
           <params>
             <param index="0">
               <value>
@@ -543,7 +543,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Reviews are not available
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:78)
+at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:80)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -578,7 +578,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3837" started-at="2021-10-17T13:07:43 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:47 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="3816" started-at="2021-10-17T16:47:09 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:13 IST">
           <params>
             <param index="0">
               <value>
@@ -593,7 +593,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Reviews are not available
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:78)
+at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:80)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -628,7 +628,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4002" started-at="2021-10-17T13:07:47 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:51 IST">
+        <test-method status="FAIL" signature="VerifyReviews(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="VerifyReviews" duration-ms="4374" started-at="2021-10-17T16:47:13 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:18 IST">
           <params>
             <param index="0">
               <value>
@@ -643,7 +643,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Reviews are not available
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:78)
+at com.plp.tests.ProductPageValidation.VerifyReviews(ProductPageValidation.java:80)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -678,7 +678,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyReviews -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3313" started-at="2021-10-17T13:07:51 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:54 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3376" started-at="2021-10-17T16:47:18 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:21 IST">
           <params>
             <param index="0">
               <value>
@@ -689,7 +689,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3641" started-at="2021-10-17T13:07:54 IST" data-provider="productnavigation" finished-at="2021-10-17T13:07:58 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3814" started-at="2021-10-17T16:47:21 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:25 IST">
           <params>
             <param index="0">
               <value>
@@ -700,7 +700,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3271" started-at="2021-10-17T13:07:58 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:01 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3250" started-at="2021-10-17T16:47:25 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:28 IST">
           <params>
             <param index="0">
               <value>
@@ -711,7 +711,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3557" started-at="2021-10-17T13:08:01 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:05 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3434" started-at="2021-10-17T16:47:28 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:32 IST">
           <params>
             <param index="0">
               <value>
@@ -722,7 +722,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3436" started-at="2021-10-17T13:08:05 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:08 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3560" started-at="2021-10-17T16:47:32 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:35 IST">
           <params>
             <param index="0">
               <value>
@@ -733,7 +733,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3494" started-at="2021-10-17T13:08:08 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:11 IST">
+        <test-method status="PASS" signature="verifyDescription(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyDescription" duration-ms="3290" started-at="2021-10-17T16:47:35 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:38 IST">
           <params>
             <param index="0">
               <value>
@@ -744,11 +744,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDescription -->
-        <test-method status="PASS" signature="verifyMandatoryFields()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyMandatoryFields" duration-ms="3817" started-at="2021-10-17T13:08:11 IST" finished-at="2021-10-17T13:08:15 IST">
+        <test-method status="PASS" signature="verifyMandatoryFields()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyMandatoryFields" duration-ms="4298" started-at="2021-10-17T16:47:38 IST" finished-at="2021-10-17T16:47:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMandatoryFields -->
-        <test-method status="FAIL" signature="verifyQuantity()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyQuantity" duration-ms="5573" started-at="2021-10-17T13:08:15 IST" finished-at="2021-10-17T13:08:21 IST">
+        <test-method status="FAIL" signature="verifyQuantity()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifyQuantity" duration-ms="4882" started-at="2021-10-17T16:47:43 IST" finished-at="2021-10-17T16:47:48 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Success Message is displayed Even without valid quantity]]>
@@ -756,7 +756,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Success Message is displayed Even without valid quantity
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.verifyQuantity(ProductPageValidation.java:184)
+at com.plp.tests.ProductPageValidation.verifyQuantity(ProductPageValidation.java:183)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -791,7 +791,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyQuantity -->
-        <test-method status="PASS" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3399" started-at="2021-10-17T13:08:21 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:24 IST">
+        <test-method status="PASS" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3657" started-at="2021-10-17T16:47:48 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:51 IST">
           <params>
             <param index="0">
               <value>
@@ -802,7 +802,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="4273" started-at="2021-10-17T13:08:24 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:29 IST">
+        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="4101" started-at="2021-10-17T16:47:51 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:55 IST">
           <params>
             <param index="0">
               <value>
@@ -817,7 +817,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Specification field Not Active
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.verifySpecification(ProductPageValidation.java:64)
+at com.plp.tests.ProductPageValidation.verifySpecification(ProductPageValidation.java:66)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -852,7 +852,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="PASS" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3492" started-at="2021-10-17T13:08:29 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:32 IST">
+        <test-method status="PASS" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3429" started-at="2021-10-17T16:47:55 IST" data-provider="productnavigation" finished-at="2021-10-17T16:47:59 IST">
           <params>
             <param index="0">
               <value>
@@ -863,7 +863,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3470" started-at="2021-10-17T13:08:32 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:36 IST">
+        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3590" started-at="2021-10-17T16:47:59 IST" data-provider="productnavigation" finished-at="2021-10-17T16:48:02 IST">
           <params>
             <param index="0">
               <value>
@@ -878,7 +878,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Specification field Not Active
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.verifySpecification(ProductPageValidation.java:64)
+at com.plp.tests.ProductPageValidation.verifySpecification(ProductPageValidation.java:66)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -913,7 +913,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="4299" started-at="2021-10-17T13:08:36 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:40 IST">
+        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3665" started-at="2021-10-17T16:48:02 IST" data-provider="productnavigation" finished-at="2021-10-17T16:48:06 IST">
           <params>
             <param index="0">
               <value>
@@ -928,7 +928,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Specification field Not Active
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.verifySpecification(ProductPageValidation.java:64)
+at com.plp.tests.ProductPageValidation.verifySpecification(ProductPageValidation.java:66)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -963,7 +963,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3863" started-at="2021-10-17T13:08:40 IST" data-provider="productnavigation" finished-at="2021-10-17T13:08:44 IST">
+        <test-method status="FAIL" signature="verifySpecification(java.lang.String)[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="verifySpecification" duration-ms="3828" started-at="2021-10-17T16:48:06 IST" data-provider="productnavigation" finished-at="2021-10-17T16:48:10 IST">
           <params>
             <param index="0">
               <value>
@@ -978,7 +978,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Specification field Not Active
 at org.testng.Assert.fail(Assert.java:99)
-at com.plp.tests.ProductPageValidation.verifySpecification(ProductPageValidation.java:64)
+at com.plp.tests.ProductPageValidation.verifySpecification(ProductPageValidation.java:66)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1013,11 +1013,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpecification -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="afterClass" is-config="true" duration-ms="1381" started-at="2021-10-17T13:08:44 IST" finished-at="2021-10-17T13:08:45 IST">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.plp.tests.ProductPageValidation@4232c52b]" name="afterClass" is-config="true" duration-ms="806" started-at="2021-10-17T16:48:10 IST" finished-at="2021-10-17T16:48:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.plp.tests.ProductPageValidation -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ProductPage Validation -->
+    <test name="Mouse Hover Actions" duration-ms="45511" started-at="2021-10-17T16:48:11 IST" finished-at="2021-10-17T16:48:56 IST">
+      <class name="com.plp.tests.HoverMouseAction">
+        <test-method status="PASS" signature="verifyMouseHoverAction()[pri:0, instance:com.plp.tests.HoverMouseAction@3d921e20]" name="verifyMouseHoverAction" duration-ms="45507" started-at="2021-10-17T16:48:11 IST" finished-at="2021-10-17T16:48:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMouseHoverAction -->
+      </class> <!-- com.plp.tests.HoverMouseAction -->
+    </test> <!-- Mouse Hover Actions -->
+  </suite> <!-- PLP-Automation Suite -->
 </testng-results>

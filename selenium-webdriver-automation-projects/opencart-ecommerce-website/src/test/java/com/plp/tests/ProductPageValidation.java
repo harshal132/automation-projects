@@ -15,7 +15,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.automation.utils.SearchProduct;
@@ -76,11 +78,8 @@ public class ProductPageValidation {
 		if(result.contains("There are no reviews for this product."))
 		{
 			Assert.fail("Reviews are not available");
-		}
-		
-		
+		}	
 	}
-	
 	
 	//TC_ProductPage_008
 	@Test(dataProvider="productnavigation")
@@ -186,21 +185,20 @@ public class ProductPageValidation {
 	}
 
   @BeforeClass
-  public void beforeClass() throws FileNotFoundException {
+  public void beforeClass(){
 	  
 	  //System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
-	  //
 	  WebDriverManager.chromedriver().setup();
 	  driver=new ChromeDriver();
 	  driver.get("https://demo.opencart.com");
 	  //driver.navigate().to("https://demo.opencart.com");
 	  driver.manage().window().maximize();
+	  
+	  //implicit wait syntax
 	  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	  
 	  search=new SearchProduct(driver);
 	  PageFactory.initElements(driver,search);
-	  
-	  
   }
   
   @DataProvider(name="productnavigation")

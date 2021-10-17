@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="PLP-Automation Suite" parallel="false">
   
-  <test name="Compare Products">
+  <!-- <test name="Compare Products">
     <classes>
       <class name="com.plp.tests.RemoveFromCompare"/>
       <class name="com.plp.tests.CompareProductsTest"/>
     </classes>
-  </test>
+  </test> -->
   
   <test name="ProductPage Validation">
   	<classes>
@@ -32,19 +32,24 @@
     </classes>
   </test>-->
     
-  <test name="Payment Method, Order Confirmation and Checkout">
+  <!-- <test name="Payment Method, Order Confirmation and Checkout">
   	<classes>
       <class name="com.plp.tests.PaymentMethod"/>
       <class name="com.plp.tests.OrderConfirmation"/>
       <class name="com.plp.tests.CheckoutTitleValidation"/>
     </classes>
-  </test>
+  </test> -->
   
   <!--<test name="Logins Validation">
   	<classes>
       <class name=""/>
     </classes>
   </test>-->
-
   
+  <test name="Mouse Hover Actions">
+  	<classes>
+      <class name="com.plp.tests.HoverMouseAction"/>
+    </classes>
+  </test>
+
 </suite> <!-- Suite -->
