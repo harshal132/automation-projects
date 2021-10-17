@@ -9,7 +9,9 @@ public class ScannerDemo {
 	        while (true) {
 	            System.out.print("What's your name? ");
 	            String input = scanner.nextLine();
+	            // execute until input is empty!
 	            if (input.isEmpty()) {
+	            	System.out.println("Input is Empty!");
 	                break;
 	            }
 	            System.out.println("Your name is " + input + ". ");
