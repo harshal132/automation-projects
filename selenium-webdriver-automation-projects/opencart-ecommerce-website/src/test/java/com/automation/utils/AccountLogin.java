@@ -19,9 +19,7 @@ public class AccountLogin {
 	
 	public void EnterEmail(String email) 
 	{
-		Email.sendKeys(email);
-		
-		
+		Email.sendKeys(email);	
 	}
 	
 	public void EnterPassword(String password) 

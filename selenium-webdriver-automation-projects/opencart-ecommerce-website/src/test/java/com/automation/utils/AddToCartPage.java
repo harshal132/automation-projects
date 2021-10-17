@@ -1,8 +1,6 @@
 package com.automation.utils;
 
 import java.util.List;
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,17 +17,16 @@ public class AddToCartPage {
 	@FindBy(xpath="//*[@id=\"top-links\"]/ul/li[5]/a")
 	WebElement CheckOut;
 	
+	By productProduct = By.xpath("//*[@id='product-product']/div[1]");
+	
 	public void ClickCheckout() 
 	{
 		CheckOut.click();
-		
 	}
-	
-	
 	
 	public Boolean MessageDisplayed() 
 	{
-		List<WebElement> elements=driver.findElements(By.xpath("//*[@id=\"product-product\"]/div[1]"));
+		List<WebElement> elements=driver.findElements(productProduct);
 		if(elements.size()>0) 
 		{
 			return true;
@@ -41,9 +38,7 @@ public class AddToCartPage {
 	}
 	public void FinalAddToCart() 
 	{
-		
 		JavascriptExecutor js = (JavascriptExecutor) this.driver;
-		
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		try {
 			Thread.sleep(2000);

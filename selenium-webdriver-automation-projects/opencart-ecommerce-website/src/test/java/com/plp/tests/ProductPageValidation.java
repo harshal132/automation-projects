@@ -27,15 +27,13 @@ public class ProductPageValidation {
 	SearchProduct search;
 	
 	
-	//TC_ProductPage_001
+  //TC_ProductPage_001
   @Test(dataProvider="productnavigation")
   public void ProductNavigation(String productName) throws InterruptedException
   {
 	  search.SearchProductFunc(productName);
-	  
 	  search.OpenProductDetails();
 	  Assert.assertEquals(productName,driver.getTitle());
-	  
   }
   
 	//TC_ProductPage_002
@@ -194,7 +192,8 @@ public class ProductPageValidation {
 	  //
 	  WebDriverManager.chromedriver().setup();
 	  driver=new ChromeDriver();
-	  driver.navigate().to("https://demo.opencart.com");
+	  driver.get("https://demo.opencart.com");
+	  //driver.navigate().to("https://demo.opencart.com");
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	  
@@ -215,7 +214,6 @@ public class ProductPageValidation {
 		for(int i=0;i<=rowcount;i++)
 		{
 			Row  row=sheet.getRow(i);
-			
 			values[i][0]=row.getCell(0).toString();
 		}
 		wb.close();
