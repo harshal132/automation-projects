@@ -3,44 +3,55 @@ package com.utils;
 import static io.appium.java_client.touch.TapOptions.tapOptions;
 import static io.appium.java_client.touch.WaitOptions.waitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
+import io.appium.java_client.touch.offset.PointOption;
 import static io.appium.java_client.touch.offset.PointOption.point;
 import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofSeconds;
-
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
-
+import java.util.HashMap;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.MultiTouchAction;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+//import io.appium.java_client.android.AndroidTouchAction;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+//import io.appium.java_client.ios.IOSTouchAction;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
 
 //contains all methods like tap, swipe, long press etc.
 public class MobileActions {
-    private AndroidDriver<?> driver;
+    private AppiumDriver<?> driver;
  
     public MobileActions (AndroidDriver<?> driver) {
         this.driver = driver;
     }
  
-    public void tap(AndroidElement androidElement) {
+    public void tap(MobileElement androidElement) {
     	new TouchAction(driver)
         .tap(tapOptions().withElement(ElementOption.element(androidElement))).perform();
     }
     //Tap to an element for 250 milliseconds
-    public void tapByElement (AndroidElement androidElement) {
+    public void tapByElement (MobileElement androidElement) {
         new TouchAction(driver)
             .tap(tapOptions().withElement(ElementOption.element(androidElement)))
             .waitAction(waitOptions(ofMillis(250))).perform();
     }
     
-    public void longPress (AndroidElement androidElement) {
+    public void longPress (MobileElement androidElement) {
         new TouchAction(driver)
         	.longPress(
         			longPressOptions()
         			.withElement(ElementOption.element(androidElement))
-        			.withDuration(ofMillis(2000)))
+        			.withDuration(Duration.ofSeconds(WaitTime.LOW.getValue())))
         			.release()
         	.perform();
     }
@@ -53,7 +64,7 @@ public class MobileActions {
     }
  
     //Press by element
-    public void pressByElement (AndroidElement element, long seconds) {
+    public void pressByElement (MobileElement element, long seconds) {
         new TouchAction(driver)
             .press(ElementOption.element(element))
             .waitAction(waitOptions(ofSeconds(seconds)))
@@ -93,7 +104,7 @@ public class MobileActions {
  
         new TouchAction(driver)
             .press(point(anchor, startPoint))
-            .waitAction(waitOptions(ofMillis(1000)))
+            .waitAction(waitOptions(Duration.ofSeconds(WaitTime.LOW.getValue())))
             .moveTo(point(anchor, endPoint))
             .release().perform();
     }
@@ -131,14 +142,14 @@ public class MobileActions {
         	.longPress(
         			longPressOptions()
         			.withElement(ElementOption.element(androidElement))
-        			.withDuration(ofMillis(time.getValue()*1000)))
+        			.withDuration(Duration.ofSeconds(time.getValue())))
         			.moveTo(ElementOption.element(androidElement2))
         			.release()
         	.perform();
     }
     
-    public void scrollIntoView(String searchElement) {
-    	String query = "new UiScrollable(new UiSelector()).scrollIntoView(text(\""+searchElement+"\"));";
+    public void scrollIntoView(String searchElementText, AndroidDriver<?> driver) {
+    	String query = "new UiScrollable(new UiSelector()).scrollIntoView(text(\""+searchElementText+"\"));";
     	AndroidElement element = (AndroidElement) driver.findElementByAndroidUIAutomator(query);
     	this.tap(element);
     }
@@ -150,4 +161,27 @@ public class MobileActions {
         			.release()
         	.perform();
     }
+    
+    public void tapBackButton(AndroidDriver<?> driver) {
+    	driver.pressKey(new KeyEvent(AndroidKey.BACK));
+    }
+    
+    public void scrollIos(String direction, String textDisplayed) {
+    	HashMap<String,Object> swipeActions = new HashMap<String,Object>();
+    	swipeActions.put("direction", swipeActions);
+    	swipeActions.put("predicateString", "label CONTAINS "+textDisplayed);
+    	swipeActions.put("toVisible", "true");
+    	driver.executeScript("mobile:scroll",swipeActions);
+    }
+    
+    public void takeScreenshot() {
+    	File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    	try {
+			FileUtils.copyFile(file, new File("Screenshot.jpg"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+    
 }

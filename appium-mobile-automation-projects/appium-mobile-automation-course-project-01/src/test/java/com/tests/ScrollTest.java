@@ -32,7 +32,7 @@ public class ScrollTest {
 		AndroidElement views = driver.findElement(By.xpath("//android.widget.TextView[@text='Views']"));
 		actions.tap(views);
 		AppiumSetup.log("Navigated to Views page");
-		actions.scrollIntoView(element);
+		actions.scrollIntoView(element,driver);
 		
 	}
 
