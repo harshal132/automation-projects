@@ -6,11 +6,14 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -209,6 +212,10 @@ public class ProductPageValidation {
 		XSSFSheet sheet = wb.getSheetAt(0);
 		int rowcount=sheet.getLastRowNum();
 		Object[][] values=new Object[rowcount+1][1];
+		//getWindowHandle() - String id
+		//List<WebElement> abcd = driver.findElements(By.xpath(""));
+		//int rows = abcd.size();
+		//getWindowHandles() - Set
 		for(int i=0;i<=rowcount;i++)
 		{
 			Row  row=sheet.getRow(i);

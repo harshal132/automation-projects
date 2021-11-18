@@ -2,10 +2,13 @@ package com.utils;
 
 import static io.appium.java_client.touch.TapOptions.tapOptions;
 import static io.appium.java_client.touch.WaitOptions.waitOptions;
-import static io.appium.java_client.touch.offset.ElementOption.element;
+import io.appium.java_client.touch.offset.ElementOption;
 import static io.appium.java_client.touch.offset.PointOption.point;
 import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofSeconds;
+
+import java.time.Duration;
+
 import io.appium.java_client.MultiTouchAction;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -23,12 +26,12 @@ public class MobileActions {
  
     public void tap(AndroidElement androidElement) {
     	new TouchAction(driver)
-        .tap(tapOptions().withElement(element(androidElement))).perform();
+        .tap(tapOptions().withElement(ElementOption.element(androidElement))).perform();
     }
     //Tap to an element for 250 milliseconds
     public void tapByElement (AndroidElement androidElement) {
         new TouchAction(driver)
-            .tap(tapOptions().withElement(element(androidElement)))
+            .tap(tapOptions().withElement(ElementOption.element(androidElement)))
             .waitAction(waitOptions(ofMillis(250))).perform();
     }
     
@@ -36,7 +39,7 @@ public class MobileActions {
         new TouchAction(driver)
         	.longPress(
         			longPressOptions()
-        			.withElement(element(androidElement))
+        			.withElement(ElementOption.element(androidElement))
         			.withDuration(ofMillis(2000)))
         			.release()
         	.perform();
@@ -52,7 +55,7 @@ public class MobileActions {
     //Press by element
     public void pressByElement (AndroidElement element, long seconds) {
         new TouchAction(driver)
-            .press(element(element))
+            .press(ElementOption.element(element))
             .waitAction(waitOptions(ofSeconds(seconds)))
             .release()
             .perform();
@@ -62,7 +65,7 @@ public class MobileActions {
     public void pressByCoordinates (int x, int y, long seconds) {
         new TouchAction(driver)
             .press(point(x,y))
-            .waitAction(waitOptions(ofSeconds(seconds)))
+            .waitAction(waitOptions(Duration.ofSeconds(seconds)))
             .release()
             .perform();
     }
@@ -113,7 +116,7 @@ public class MobileActions {
     //Multitouch action by using an android element
     public void multiTouchByElement (AndroidElement androidElement) {
         TouchAction press = new TouchAction(driver)
-            .press(element(androidElement))
+            .press(ElementOption.element(androidElement))
             .waitAction(waitOptions(ofSeconds(1)))
             .release();
  
@@ -127,9 +130,9 @@ public class MobileActions {
         new TouchAction(driver)
         	.longPress(
         			longPressOptions()
-        			.withElement(element(androidElement))
+        			.withElement(ElementOption.element(androidElement))
         			.withDuration(ofMillis(time.getValue()*1000)))
-        			.moveTo(element(androidElement2))
+        			.moveTo(ElementOption.element(androidElement2))
         			.release()
         	.perform();
     }
@@ -142,8 +145,8 @@ public class MobileActions {
     
     public void dragAndDrop (AndroidElement androidElement,AndroidElement androidElement2) {
         new TouchAction(driver)
-        	.longPress(element(androidElement))
-        			.moveTo(element(androidElement2))
+        	.longPress(ElementOption.element(androidElement))
+        			.moveTo(ElementOption.element(androidElement2))
         			.release()
         	.perform();
     }
