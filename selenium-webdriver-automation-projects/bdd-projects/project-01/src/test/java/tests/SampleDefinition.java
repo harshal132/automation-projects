@@ -1,10 +1,15 @@
 package tests;
 
+import org.junit.runner.RunWith;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 
-public class SampleDefinition {
+
+public class SampleDefinition extends AbstractTestNGCucumberTests {
 	
 	@Given("Import dependency")
 	public void import_dependency() {
