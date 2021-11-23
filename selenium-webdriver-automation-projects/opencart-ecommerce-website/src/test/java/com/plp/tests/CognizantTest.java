@@ -54,7 +54,7 @@ public class CognizantTest {
 			Assert.fail("Invalid Title displayed");
 		}
 	}
-	
+
 	@Test
 	public void selectCountryDropdownTest() throws InterruptedException {
 		driver.findElement(By.linkText("Job search")).click();

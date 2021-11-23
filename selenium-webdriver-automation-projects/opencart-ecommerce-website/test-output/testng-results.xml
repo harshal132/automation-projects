@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28944" started-at="2021-11-20T01:04:29 IST" finished-at="2021-11-20T01:04:58 IST">
+  <suite name="Default suite" duration-ms="56156" started-at="2021-11-20T17:37:42 IST" finished-at="2021-11-20T17:38:38 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28944" started-at="2021-11-20T01:04:29 IST" finished-at="2021-11-20T01:04:58 IST">
-      <class name="com.plp.tests.CognizantTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.plp.tests.CognizantTest@33f88ab]" name="setUp" is-config="true" duration-ms="8999" started-at="2021-11-20T01:04:29 IST" finished-at="2021-11-20T01:04:38 IST">
+    <test name="Default test" duration-ms="56156" started-at="2021-11-20T17:37:42 IST" finished-at="2021-11-20T17:38:38 IST">
+      <class name="com.plp.tests.RegistrationDataDrivenTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.plp.tests.RegistrationDataDrivenTest@1b68ddbd]" name="beforeClass" is-config="true" duration-ms="19801" started-at="2021-11-20T17:37:42 IST" finished-at="2021-11-20T17:38:02 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="menuAndSubMenuTest()[pri:0, instance:com.plp.tests.CognizantTest@33f88ab]" name="menuAndSubMenuTest" duration-ms="9656" started-at="2021-11-20T01:04:38 IST" finished-at="2021-11-20T01:04:48 IST">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="registrationWithExcel()[pri:0, instance:com.plp.tests.RegistrationDataDrivenTest@1b68ddbd]" name="registrationWithExcel" duration-ms="33957" started-at="2021-11-20T17:38:02 IST" finished-at="2021-11-20T17:38:36 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- menuAndSubMenuTest -->
-        <test-method status="PASS" signature="selectCountryDropdownTest()[pri:0, instance:com.plp.tests.CognizantTest@33f88ab]" name="selectCountryDropdownTest" duration-ms="9411" started-at="2021-11-20T01:04:48 IST" finished-at="2021-11-20T01:04:57 IST">
+        </test-method> <!-- registrationWithExcel -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.plp.tests.RegistrationDataDrivenTest@1b68ddbd]" name="afterClass" is-config="true" duration-ms="2362" started-at="2021-11-20T17:38:36 IST" finished-at="2021-11-20T17:38:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectCountryDropdownTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.plp.tests.CognizantTest@33f88ab]" name="tearDown" is-config="true" duration-ms="819" started-at="2021-11-20T01:04:57 IST" finished-at="2021-11-20T01:04:58 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.plp.tests.CognizantTest -->
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.plp.tests.RegistrationDataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

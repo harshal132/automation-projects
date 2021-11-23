@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.plp.tests.CognizantTest">
+      <class name="com.plp.tests.RegistrationDataDrivenTest">
         <methods>
-          <include name="menuAndSubMenuTest"/>
-          <include name="setUp"/>
-          <include name="selectCountryDropdownTest"/>
-          <include name="tearDown"/>
+          <include name="registrationWithExcel"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.plp.tests.CognizantTest -->
+      </class> <!-- com.plp.tests.RegistrationDataDrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -13,6 +13,12 @@
       <class name="com.plp.tests.ProductPageValidation"/>
     </classes>
   </test>
+  
+  <test name="User Registration">
+  	<classes>
+      <class name="com.plp.tests.RegistrationDataDrivenTest"/>
+    </classes>
+  </test>
    
   <!--  <test name="BillingDetails Section Validation">
   	<classes>
