@@ -20,6 +20,8 @@ public class CognizantTest {
 	@BeforeTest
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.firefoxdriver().setup();
+		//WebDriverManager.edgedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.capgemini.com/");

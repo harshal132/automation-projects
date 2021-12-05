@@ -1,5 +1,6 @@
 package com.automation.utils;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +11,8 @@ public class AccountLogin {
 	
 	@FindBy(id="input-email")
 	WebElement Email;
+	
+	By abcd = By.name("xyz");  // POM with Page Factory
 	
 	@FindBy(id="input-password")
 	WebElement Password;

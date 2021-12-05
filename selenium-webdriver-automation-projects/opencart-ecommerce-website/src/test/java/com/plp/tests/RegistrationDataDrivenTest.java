@@ -2,7 +2,6 @@ package com.plp.tests;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -31,7 +30,6 @@ public class RegistrationDataDrivenTest {
 		int columncount = sheet.getRow(0).getLastCellNum();
 		System.out.println("Rows = "+rowcount+ "Column = "+columncount);
 		System.out.println(sheet.getRow(0).getCell(2).toString());  // -- access elements one by one
-		
 		//# Multiple Registrations
 		//String detailsArray[][] = new String[rowcount-1][columncount];
 		String firstName[] = new String[rowcount-1];
@@ -75,6 +73,8 @@ public class RegistrationDataDrivenTest {
 		  
 		  driver.findElement(By.linkText("Register")).click();
 		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div#content > h1")));
+		  
+		  wb.close();
 		}
   }
   
