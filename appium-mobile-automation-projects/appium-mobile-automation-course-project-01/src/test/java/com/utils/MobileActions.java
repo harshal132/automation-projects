@@ -2,6 +2,8 @@ package com.utils;
 
 import static io.appium.java_client.touch.TapOptions.tapOptions;
 import static io.appium.java_client.touch.WaitOptions.waitOptions;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 import static io.appium.java_client.touch.offset.PointOption.point;
@@ -37,7 +39,7 @@ public class MobileActions {
  
     public void tap(MobileElement androidElement) {
     	new TouchAction(driver)
-        .tap(tapOptions().withElement(ElementOption.element(androidElement))).perform();
+        .tap(TapOptions.tapOptions().withElement(ElementOption.element(androidElement))).perform();
     }
     //Tap to an element for 250 milliseconds
     public void tapByElement (MobileElement androidElement) {
@@ -48,8 +50,7 @@ public class MobileActions {
     
     public void longPress (MobileElement androidElement) {
         new TouchAction(driver)
-        	.longPress(
-        			longPressOptions()
+        	.longPress(LongPressOptions.longPressOptions()
         			.withElement(ElementOption.element(androidElement))
         			.withDuration(Duration.ofSeconds(WaitTime.LOW.getValue())))
         			.release()
@@ -75,7 +76,7 @@ public class MobileActions {
     //Press by coordinates
     public void pressByCoordinates (int x, int y, long seconds) {
         new TouchAction(driver)
-            .press(point(x,y))
+            .press(PointOption.point(x,y))
             .waitAction(waitOptions(Duration.ofSeconds(seconds)))
             .release()
             .perform();
@@ -167,8 +168,8 @@ public class MobileActions {
     }
     
     public void scrollIos(String direction, String textDisplayed) {
-    	HashMap<String,Object> swipeActions = new HashMap<String,Object>();
-    	swipeActions.put("direction", swipeActions);
+    	HashMap<String,String> swipeActions = new HashMap<String,String>();
+    	swipeActions.put("direction", direction);
     	swipeActions.put("predicateString", "label CONTAINS "+textDisplayed);
     	swipeActions.put("toVisible", "true");
     	driver.executeScript("mobile:scroll",swipeActions);

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.plp.tests.FlipkartTest">
+      <class name="mca.exam.ButtonExamples">
         <methods>
-          <include name="closePopupTest"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="radioButtonTest"/>
         </methods>
-      </class> <!-- com.plp.tests.FlipkartTest -->
+      </class> <!-- mca.exam.ButtonExamples -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

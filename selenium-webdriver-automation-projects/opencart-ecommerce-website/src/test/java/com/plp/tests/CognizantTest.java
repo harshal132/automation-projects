@@ -2,6 +2,7 @@ package com.plp.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -12,6 +13,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CognizantTest {
@@ -44,9 +47,12 @@ public class CognizantTest {
 	
 	@Test
 	public void menuAndSubMenuTest() {
-		
+		SoftAssert aAssert = new SoftAssert(); // --- soft assert
+		//aAssert.assertAll(); -- Assert all failures at end of execution
 		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.linkText("Industries"))).perform();
+		
+		action.keyDown(Keys.CONTROL).sendKeys("N").build().perform();
 		driver.findElement(By.linkText("Insurance")).click();
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText("Services")));
 		if(driver.getTitle().contains("Insurance")) {
