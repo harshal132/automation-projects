@@ -17,7 +17,6 @@ class TreeSetDemo {
 
 		Iterator<String> iterator = treeSet.iterator(); // obtaining iterator object
 		while (iterator.hasNext()) { // to iterate thru collection.
-			//Object object = iterator.next(); no object conversion required
 			System.out.print(iterator.next() + "\t");
 		}
 	}
