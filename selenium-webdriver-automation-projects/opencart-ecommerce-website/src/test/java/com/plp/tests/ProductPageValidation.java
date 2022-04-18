@@ -190,7 +190,6 @@ public class ProductPageValidation {
 	  driver.get("https://demo.opencart.com");
 	  //driver.navigate().to("https://demo.opencart.com");
 	  driver.manage().window().maximize();
-	  
 	  //implicit wait syntax
 	  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	  

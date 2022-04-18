@@ -14,7 +14,7 @@ public class LinkedHashSetTraverse {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Set<String> linkedHashSet = new LinkedHashSet<String>(); // create a Treeset object
+		Set <String> linkedHashSet = new LinkedHashSet<String>(); // create a Treeset object
 
 		linkedHashSet.add("One");
 		linkedHashSet.add("Two");
